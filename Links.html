@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Links Page</title>
+  </head>
+  <body>
+    <h1>Links</h1>
+    <h3>Anchors</h3>
+    <p>Links are created with "a" element, which stands for anchor.</p>
+    <p>This example is about links and <a href="images.html">images</a>.</p>
+    <h4>Absolute, Relative and Root-Relative Links</h4>
+    <p><img src="images/links.jpg"><caption>"Absolute, Relative and Root-Relative Links"</caption>.</p>
+    <p>There are three kinds of links - </p>
+    <ul>
+      <li>Absolute links, like to <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>Mozilla Developer Network</a>, which is a very good resource for web developers.
+          <br/><p><img src="images/AbsoluteLink.jpg"></img></p>
+      </li>
+      <li>Relative Links, like to our <a href='misc/extras.html'>extras page</a>.
+          <br/> <p><img src="images/RelativeLink.jpg"></img></p>
+          <br/> <p><img src="images/noParentRef.jpg"></img></p>
+          <br/> <p><img src="images/parentRef.jpg"></img></p>
+      </li>
+      <li>“Root-relative” links are similar to the previous section, but instead of being relative to the current page, they’re relative to the “root” of the entire website. For instance, if your website is hosted on our-site.com, all root-relative URLs will be relative to our-site.com.
+          <br/> <p><img src="images/rootRelative.jpg"></img></p>
+      </li>
+    </ul>
+    <h4>Link Targets</h4>
+    <p>Attributes alter the meaning of HTML elements, and sometimes you need to modify more than one aspect of an element. For example, "a" elements also accept a target attribute that defines where to display the page when the user clicks the link. By default, most browsers replace the current page with the new one. We can use the target attribute to ask the browser to open a link in a new window/tab.</p>
+    <p> <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'
+       target='_blank'>Mozilla Developer Network</a>, which is a very good
+       resource for web developers. "Target - _blank"</p>
+    <p> <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'
+       target='_self'>Mozilla Developer Network</a>, which is a very good
+       resource for web developers. "Target - _self"</p>
+    <p> <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'
+          target='_top'>Mozilla Developer Network</a>, which is a very good
+          resource for web developers. "Target - _top"</p>
+    <p> <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'
+             target='_parent'>Mozilla Developer Network</a>, which is a very good
+             resource for web developers. "Target - _parent"</p>
+
+
+  </body>
+</html>

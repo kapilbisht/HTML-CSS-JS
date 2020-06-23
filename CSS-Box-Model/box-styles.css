@@ -1,0 +1,19 @@
+h1,h2,h3,h4,h5,h6,p {
+  background-color: #DDE0E3;    /* Light gray */
+  padding: 50px;  /*Padding*/
+  /*border: 1px solid #5D6063; border*/
+ /*there are -top, -bottom, -left, and -right variants for the border property*/
+  border-bottom: 1px solid #5D6063;
+  margin-bottom: 50px;   /*Margin*/
+}
+
+p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+em, strong {
+  background-color: #B2D6FF;    /* Light blue */
+   display: inline; /*this is default for em and strong*/
+}
