@@ -1,0 +1,161 @@
+/*
+“Class selectors” let you apply CSS styles to a specific HTML element.
+They let you differentiate between HTML elements of the same typ
+*/
+.synopsis {
+  color: #7E8184;        /* Light gray */
+  font-style: italic;
+}
+
+/*
+-----class naming conventions-----
+The value of the HTML class attribute can be (almost) anything you want as long as it matches the selector in your CSS.
+The standard naming convention for classes is to use all lowercase and hyphens for spaces,
+just like file and folder names.
+*/
+.button:link, .button:visited {
+  display: block;
+  text-decoration: none;
+
+  color: #FFF;
+  background-color: #5995DA;    /* Blue */
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;    /* Dark gray */
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+/*
+-----container divs-----
+Remember that <div> doesn’t alter the semantic structure of a page.
+This makes it a great tool for defining the presentational structure of a web page. By wrapping other HTML elements in <div> tags,
+we can organize our site into larger layout-oriented chunks without messing up how search engines view our content.
+*/
+.page {
+  width: 600px;
+  margin: 0 auto;
+}
+
+/*Modifying class styles*/
+.call-to-action {
+  font-style: italic;
+  background-color: #EEB75A;    /* Yellow */
+}
+
+/*Descendent Selectors*/
+.synopsis em {
+  font-style: normal;
+}
+
+.article h2 .subheading em {
+  font-style: oblique;
+}
+
+/*
+-----Pseudo Classes For links-----
+CSS "Pseudo Classes" provide a mechanism for hooking into this kind of temprory user information.
+At any given time, an <a href> element can be in a number of different states,
+and you can use pseudo-classes to style each one of them individually.
+Think of them as class selectors that you don’t have to write on your own because they’re built into the browser.
+
+Basic Link styles
+Pseudo classes begin with a colon followed by the name of desired class.
+The most common linke pseudo-classes are as follows-
+
+:link – A link the user has never visited.
+:visited – A link the user has visited before.
+:hover – A link with the user’s mouse over it.
+:active – A link that’s being pressed down by a mouse (or finger).
+*/
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited:hover{
+  color: orange;
+}
+a:visited:active {
+  color: red;
+}
+
+/*
+-----Pseudo-Classes for Buttons-----
+*/
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #76AEED;  /* Light blue */
+}
+
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: #5995DA;  /* Blue */
+}
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #F5CF8E;     /* Light yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #EEB75A;     /* Yellow */
+}
+
+/*
+-----Pseudo-Classes for Structure-----
+*/
+p:last-of-type {
+  margin-bottom: 50px;
+}
+
+p:first-of-type {
+  color: #EEB75B;
+  font-style: italic;
+}
+
+/*
+Caveats
+*/
+.page > p:first-of-type {
+  color: #FFCFEE;
+  font-style: italic;
+}
+
+/*
+-----ID Selectors-----
+“ID selectors” are a more stringent alternative to class selectors.
+They work pretty much the same way, except you can only have one element with the same ID per page,
+which means you can’t reuse styles at all.
+Instead of a class attribute, they require an id attribute on whatever HTML element you’re trying to select.
+
+*/
+
+
+#button-2,
+#button-3,
+#checkout-button,
+#menu-bar-call-to-action {
+  color: #5D6063;
+}
+
+/*
+-----URL Fragments-----
+id attributes need to be unique becausethey server as the target for "URL fragments".
+*/
+/*
+-----CSS Specificity-----
+*/
+#button-2 {
+  background-color: #D55C5F;    /* Red */
+}

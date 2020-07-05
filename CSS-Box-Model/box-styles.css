@@ -1,3 +1,6 @@
+body {
+  text-align: center;
+}
 h1,h2,h3,h4,h5,h6,p {
   background-color: #DDE0E3;    /* Light gray */
   padding: 50px;  /*Padding*/
@@ -26,4 +29,22 @@ div {
   text-align: center;
   border: 2px solid #5D6063;
   border-radius: 5px;
+
+  width: 200px;
+  box-sizing: border-box;
+  margin: 20px auto;
 }
+/*resetting styles*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+Everything is a box.
+Boxes can be inline or block-level.
+Boxes have content, padding, borders, and margins.
+They also have seemingly arbitrary rules about how they interact.
+Mastering the CSS box model means you can lay out most web pages.
+*/
